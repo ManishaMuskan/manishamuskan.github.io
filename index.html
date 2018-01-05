@@ -1,1 +1,58 @@
-Today is my first day on Git
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manisha | Web & App Developer</title>
+<meta name="author" content="Manisha">
+
+
+
+<!-- For cache mgmt
+<meta http-equiv="Cache-control" content="public">-->
+<!-- Style-->
+<link rel="stylesheet" href="css/materialize.min.css">
+<link rel="stylesheet" href="css/helper.css">
+
+
+
+<body class="blackish">
+    <section class="full-screen white-text valign-wrapper" id="first">
+        <div class="container">
+            <h3>
+                Good design, when done well becomes invisible - all the thoughts that goes into the things we don't think about. These ties aren't always obvious, but they're there. And, those who seek the connections - those who seek beauty and meaning - will find them.
+                <!--                 Simplicity carried to an extreme becomes elegance. <br>-->
+
+            </h3>
+        </div>
+    </section>
+    <section class="full-screen valign-wrapper">
+        <div class="container center text-blackish">
+
+            <h1><big>Not your average Software Developer</big><span id="brag"></span></h1>
+            <h3>
+                <a href="home.html">Get ready to turn ideas into reality</a>
+            </h3>
+        </div>
+    </section>
+
+    <script src="js/noframework.waypoints.min.js"></script>
+    <script>
+        var waypoint = new Waypoint({
+            element: document.getElementById('brag'),
+            handler: function(direction) {
+                if (direction == "up") {
+                    document.body.style.backgroundColor = "#131314"
+                } else {
+                    document.body.style.backgroundColor = "white"
+                }
+            },
+            offset: 'bottom-in-view'
+        })
+    </script>
+
+</body>
+
+</html>

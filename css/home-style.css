@@ -1,0 +1,234 @@
+.round-btn {
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    margin: 0;
+    padding: 5px 20px;
+    border: 2px solid #23334B;
+    background: transparent;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #252a30;
+}
+
+
+.round-btn:hover {
+    background: #23334B;
+    color: white;
+}
+
+#can-banner {
+    position: relative;
+}
+
+#intro {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 560px) {
+    #myCanvas {
+        width: 80%;
+        height: auto;
+    }
+}
+
+.skills .skill-text {
+    width: 30%;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    #myCanvas {}
+    .skills .skill-text {
+        max-width: 50%;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    #skills > div {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+
+/* Overlay style */
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #23334B;
+}
+
+/* Overlay closing cross */
+
+.overlay .overlay-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+}
+
+.overlay > .overlay-content {
+    visibility: hidden;
+}
+
+.overlay.open > .overlay-content {
+    visibility: visible;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+
+/* Effects */
+
+.overlay-door {
+    visibility: hidden;
+    width: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: width 0.5s 0.3s, visibility 0s 0.8s;
+    transition: width 0.5s 0.3s, visibility 0s 0.8s;
+}
+
+.overlay-door.open {
+    visibility: visible;
+    width: 100%;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+}
+
+.overlay-door .overlay-close {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s 0.5s;
+    transition: opacity 0.3s 0.5s;
+}
+
+.overlay-door.open .overlay-close {
+    opacity: 1;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.overlay-door.close .overlay-close {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.portfolio-container {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.portfolio-item {
+    min-height: 200px;
+}
+
+.portfolio-container:hover .info {
+    bottom: 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.portfolio-container .info {
+    position: absolute;
+    left: 0;
+    bottom: -30%;
+    width: 100%;
+    background: #00000085;
+    padding: 10px 15px;
+}
+
+#portfolio .round-btn {
+    margin: 10px 0;
+}
+
+.portfolio-item img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.greyblue .round-btn {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+}
+
+.greyblue .round-btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.greyblue .round-btn.hilight {
+    background-color: white;
+    color: black;
+}
+
+.greyblue .round-btn.hilight:hover {
+    background-color: #a8e4ec;
+}
+
+.footer .social-links a {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    margin: 0px 4px;
+    border-radius: 50px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .social-links a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    -o-border-image: initial;
+    border-image: initial;
+}
+
+.footer p.copyright {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1em;
+    line-height: 1.8;
+    margin: 24px 0px;
+}
+
+.logo {
+    background-image: url();
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: contain;
+    padding: 5px;
+}
+
+.logo-container {
+    margin: 20px;
+}
+
+textarea {
+    height: 8rem;
+}
